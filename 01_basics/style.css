@@ -5,3 +5,108 @@ p {
 /*
 this is the third way of styling or using css
 */
+
+/*
+In this section we will discuss about selectors: 
+1.Universal Selector
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+This selector is basically styling the whole DOM
+
+2. Type Selectors
+
+p {
+  font-size: 16px;
+  margin: 10px 20px 10px 20px; // all the parameters of this attribute basically start and end in clockwise direction so first is top then right then botton and then left
+  padding: 1px 2px 3px 4px; 
+}
+
+This selector is styling each and every element specified
+
+3. Class Selectors
+
+.highlight {
+  background-color: #fff
+}
+
+<div class="highlight">
+  <p>This text has some background colour</p>
+</div>
+
+This selector is styling any element by mentioning class name
+
+4. Id Selector
+
+#header {
+  background-color: #2ac333;
+}
+
+<div id="header">
+  <p>This text has some background colour</p>
+</div>
+
+Just like class selector this selector is also used for styling any element by mentioning name of selector in id attribute
+
+5. Attribute Selector
+
+input[type="text"] {
+  border: 2px solid #21a2c9;
+}
+
+This selector is styling particular attribute of an element only
+
+6. Descendant Selector 
+
+article p {
+  font-style: italic;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 10px;
+}
+
+This selector is styling only the descendants of an element which are element itself.
+Note: Try to read the descendants from right to left like above we can read it as all the p tags in article tags
+
+7. Child Selector
+
+ul > li {
+  list-style-type: square;
+  background-color: orange;
+}
+
+This selector is used for styling only the childs not descendants of an element
+
+8. Adjacent Sibling Selector
+
+h1 + p {
+  font-weight: bold;
+}
+
+This selector is used for styling only the adjance sibling elements.
+
+9. Psuedo-class Selector
+
+a:hover {
+  background-color: #48f393;
+  text-decoration: none;
+  color: #1a1a1a;
+  padding: 10px;
+  margin: 4px;
+}
+
+This selector is used for styling only when we want to apply some property of an element.
+
+10. Grouping Selector
+
+h1, h2, h3 {
+  color: orange;
+  
+}
+
+This selector is used for selecting multiple elements by seperating them with comma.
+*/
