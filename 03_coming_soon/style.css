@@ -63,3 +63,26 @@ button {
 button:hover {
     background-color: #a147fb;
 }
+
+/*
+
+How flexbox works?
+
+1. flex-direction: column -> aligns items in column manner order wise
+   flex-direction: column-reverse -> reverses the order which was displayed by flex-direction: column property
+2. justify-content: flex-end -> moves all the items to the end of the block where we are printing the element
+   justify-content: center -> moves all the items in the middle of the block where are are printing the element
+   justify-content: space-around -> displays all the items in a block with spaces in every direction for all the elements in the block on which it is used
+   justify-content: space-between -> displays all the items in a block with spaces in between only for all the elements in the block on which it is used
+3. align-items: center -> moves all the elements to the center of the container in which it is used
+   align-items: end -> moves all the elements to the end(like bottom) of the container in which it is used
+   align-items: start -> moves all the elements to the start(like top) of the container in which it is used
+   align-items: baseline -> similar to align-items: start but mostly top
+4. flex-wrap: wrap -> based on the resolution of the device this wraps all the elements within the container in such a way that elements are not displayed in distorted manner without breaking any css.
+   flex-wrap: wrap height: auto -> this adds some height or removes unnecessary spaces between the elements in the container.
+5. align-content: space-around -> aligns all the items in the container and adds space all around each element such that it doesn't break the styling
+6. order -> suppose we want to explicitly change the order of the elements so we can provide in line css to each item or provide by id property to each element and change the order from 1 to n where n is the total elements in the container
+7. flex-grow: n -> suppose we want elements to have sizes added to them in one direction then we can provide some numeric value to this property to grow it but all this distribution is done in such a way that all the elements are present in one block
+8. align-self: center, flex-end, flex-start, stretch ; height: auto-> works like align-items but for individual element
+
+*/
